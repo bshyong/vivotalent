@@ -145,6 +145,9 @@ GEM
     nested_form (0.3.1)
     nokogiri (1.5.6)
     orm_adapter (0.4.0)
+    paper_trail (2.7.1)
+      activerecord (~> 3.0)
+      railties (~> 3.0)
     polyglot (0.3.3)
     pry (0.9.12)
       coderay (~> 1.0.5)
@@ -277,6 +280,7 @@ DEPENDENCIES
   guard-spork
   jquery-rails
   launchy (>= 2.2.0)
+  paper_trail (~> 2)
   quiet_assets (>= 1.0.1)
   rails (= 3.2.13.rc1)
   rails_admin
