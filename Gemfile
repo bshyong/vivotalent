@@ -17,7 +17,7 @@ gem "launchy", ">= 2.2.0", :group => :test
 gem "capybara", ">= 2.0.2", :group => :test
 gem "guard-spork", :group => :test
 gem "spork", :group =>:test
-gem 'rb-fsevent', :group => :test, :require => false if RUBY_PLATFORM =~ /darwin/i
+gem 'rb-fsevent', :group => :test, :require => false #if RUBY_PLATFORM =~ /darwin/i
 gem "guard-rspec", :group => :test
 gem "guard-livereload", :group => :test
 gem "factory_girl_rails", ">= 4.2.0", :group => [:development, :test]
