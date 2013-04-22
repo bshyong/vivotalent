@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= content_for?(:title) ? yield(:title) : "Rails3 Bootstrap Devise Cancan" %></title>
+    <title>Super Vitamins</title>
     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Rails3 Bootstrap Devise Cancan" %>">
     <%= stylesheet_link_tag "application", :media => "all" %>
     <%= javascript_include_tag "application" %>
@@ -10,24 +10,20 @@
     <%= yield(:head) %>
   </head>
   <body class="<%= controller_name %> <%= action_name %>">
-    <header class="navbar navbar-fixed-top">
-      <nav class="navbar-inner">
+    <div class="navbar">
+      <div class="navbar-inner">
         <div class="container">
           <%= render 'layouts/navigation' %>
         </div>
-      </nav>
-    </header>
-    <div id="main" role="main">
+      </div>
+    </div>
+    <div id="main">
       <div class="container">
-        <div class="content">
-           <div class="row">
-            <div class="span12">
-              <%= render 'layouts/messages' %>
-              <%= yield %>
-            </div>
+       <div class="row">
+          <div class="span12">
+            <%= render 'layouts/messages' %>
+            <%= yield %>
           </div>
-          <footer>
-          </footer>
         </div>
       </div> <!--! end of .container -->
     </div> <!--! end of #main -->
