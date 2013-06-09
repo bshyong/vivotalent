@@ -1,5 +1,10 @@
 class HomeController < ApplicationController
   def index
-    # @users = User.all
   end
+
+  def client_login
+    flash[:error] = "Not authorized."
+    redirect_to :root
+  end
+
 end
